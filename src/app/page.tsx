@@ -3,12 +3,12 @@
 import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion, useScroll, useTransform } from 'framer-motion'
+import { motion } from 'framer-motion' // Removed useTransform
 import { Globe, Smartphone, Cloud, Megaphone, Share2, Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { Button } from "@/components/ui/Button"
-import { Input } from "@/components/ui/Input"
-import GetStartedButton from "@/components/animata/background/button/get-started-button"
+// import { Input } from "@/components/ui/Input"
+// import GetStartedButton from "@/components/animata/background/button/get-started-button"
 
 const services = [
   { icon: Globe, title: 'Website Development', description: 'Custom-built, responsive websites tailored to your brand.' },
@@ -39,9 +39,7 @@ export default function LandingPage() {
 
   useEffect(() => setMounted(true), [])
 
-  const { scrollYProgress } = useScroll()
-  const y = useTransform(scrollYProgress, [0, 1], ['0%', '50%'])
-
+  // Removed scrollYProgress since it's not used
   const starRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
