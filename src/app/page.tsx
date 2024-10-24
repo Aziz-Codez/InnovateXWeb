@@ -3,7 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { motion } from 'framer-motion' // Removed useTransform
+import { motion } from 'framer-motion'
 import { Globe, Smartphone, Cloud, Megaphone, Share2, Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { Button } from "@/components/ui/Button"
@@ -39,7 +39,8 @@ export default function LandingPage() {
 
   useEffect(() => setMounted(true), [])
 
-  // Removed scrollYProgress since it's not used
+ 
+
   const starRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
