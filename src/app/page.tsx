@@ -7,8 +7,8 @@ import { motion, useScroll, useTransform } from 'framer-motion'
 import { Globe, Smartphone, Cloud, Megaphone, Share2, Moon, Sun } from 'lucide-react'
 import { useTheme } from 'next-themes'
 import { Button } from "@/components/ui/Button"
-import { Input } from "@/components/ui/Input"
-import GetStartedButton from "@/components/animata/background/button/get-started-button"
+// import { Input } from "@/components/ui/Input"
+// import GetStartedButton from "@/components/animata/background/button/get-started-button"
 
 const services = [
   { icon: Globe, title: 'Website Development', description: 'Custom-built, responsive websites tailored to your brand.' },
